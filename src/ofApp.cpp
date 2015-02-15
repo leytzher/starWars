@@ -13,6 +13,11 @@ void ofApp::setup(){
 	//Load image file
 	space.loadImage("space.png");
 	
+	soundTrack.loadSound("Training-Mixed.wav");
+	soundTrack.setLoop(true);
+	soundTrack.play();
+
+	
 	sound.loadSound("SlowSabr.wav");
 	sound.setMultiPlay(true);
 	
@@ -29,6 +34,8 @@ void ofApp::setup(){
 
 //--------------------------------------------------------------
 void ofApp::update(){
+	
+	
 	storm.update();
 	darthV.update();
 	darthM.update();
@@ -37,14 +44,18 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
+	
 	ofBackground(0, 0, 0);
 	space.draw(0, 0, ofGetWidth(),ofGetHeight());
-	
+
+	ofDrawBitmapString("Jedi Training Camp ", 100, 100);
+	ofDrawBitmapString("Joaquin's 5th Birthday", 100, 200);
+
 
 
 	storm.draw();
-	if (storm.pos.length() > ofGetHeight()){
-		storm.vel = -storm.vel;
+	if (storm.pos.length() > ofGetHeight() + 100 || storm.pos.length() < ofGetHeight() -100){
+		storm.vel = -1*storm.vel;
 		storm.update();
 		storm.draw();
 	}
