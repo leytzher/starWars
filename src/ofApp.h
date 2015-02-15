@@ -1,8 +1,8 @@
 #pragma once
 #include "StormTrooper.h"
 #include "ofMain.h"
-
-
+#include "DarthVader.h"
+#include "DarthMaul.h"
 
 class ofApp : public ofBaseApp{
 	public:
@@ -21,6 +21,9 @@ class ofApp : public ofBaseApp{
 		void gotMessage(ofMessage msg);
 	
 	ofSoundPlayer sound; //light saber sound
-	StormTrooper storm ;
+	StormTrooper storm; // create 20 storm troopers;
+	DarthVader darthV;
+	DarthMaul darthM;
+
 	
 };

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
 		CEF6E9AC1A90023A00A4702D /* StormTrooper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEF6E9AA1A90023A00A4702D /* StormTrooper.cpp */; };
+		CEF6E9AF1A902C8100A4702D /* DarthVader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEF6E9AD1A902C8100A4702D /* DarthVader.cpp */; };
+		CEF6E9B21A902E1C00A4702D /* DarthMaul.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEF6E9B01A902E1C00A4702D /* DarthMaul.cpp */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
 		E45BE97C0E8CC7DD009D7055 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */; };
@@ -63,6 +65,10 @@
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
 		CEF6E9AA1A90023A00A4702D /* StormTrooper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StormTrooper.cpp; sourceTree = "<group>"; };
 		CEF6E9AB1A90023A00A4702D /* StormTrooper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StormTrooper.h; sourceTree = "<group>"; };
+		CEF6E9AD1A902C8100A4702D /* DarthVader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DarthVader.cpp; sourceTree = "<group>"; };
+		CEF6E9AE1A902C8100A4702D /* DarthVader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DarthVader.h; sourceTree = "<group>"; };
+		CEF6E9B01A902E1C00A4702D /* DarthMaul.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DarthMaul.cpp; sourceTree = "<group>"; };
+		CEF6E9B11A902E1C00A4702D /* DarthMaul.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DarthMaul.h; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E45BE9710E8CC7DD009D7055 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
 		E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
@@ -188,6 +194,10 @@
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
 				CEF6E9AA1A90023A00A4702D /* StormTrooper.cpp */,
 				CEF6E9AB1A90023A00A4702D /* StormTrooper.h */,
+				CEF6E9AD1A902C8100A4702D /* DarthVader.cpp */,
+				CEF6E9AE1A902C8100A4702D /* DarthVader.h */,
+				CEF6E9B01A902E1C00A4702D /* DarthMaul.cpp */,
+				CEF6E9B11A902E1C00A4702D /* DarthMaul.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -288,6 +298,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEF6E9B21A902E1C00A4702D /* DarthMaul.cpp in Sources */,
+				CEF6E9AF1A902C8100A4702D /* DarthVader.cpp in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				CEF6E9AC1A90023A00A4702D /* StormTrooper.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,

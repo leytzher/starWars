@@ -25,9 +25,6 @@ public:
 	
 	ofImage stormTrooperImage;
 	
-	
-	
-	
 };
 
 #endif /* defined(__emptyExample__StormTrooper__) */

@@ -1,5 +1,7 @@
 #include "ofApp.h"
 #include "StormTrooper.h"
+#include "DarthVader.h"
+#include "DarthMaul.h"
 
 ofImage image;
 ofImage space;
@@ -17,11 +19,19 @@ void ofApp::setup(){
 	storm = StormTrooper();
 	storm.setup();
 	
+	darthV = DarthVader();
+	darthV.setup();
+	
+	darthM = DarthMaul();
+	darthM.setup();
+	
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
 	storm.update();
+	darthV.update();
+	darthM.update();
 
 }
 
@@ -33,13 +43,32 @@ void ofApp::draw(){
 
 
 	storm.draw();
+	if (storm.pos.length() > ofGetHeight()){
+		storm.vel = -storm.vel;
+		storm.update();
+		storm.draw();
+	}
+	
+	darthV.draw();
+	if (darthV.pos.length() > ofGetHeight()){
+		darthV.setup();
+		darthV.update();
+		darthV.draw();
+	}
+	
+	darthM.draw();
+	if (darthM.pos.length() > ofGetHeight()){
+		darthM.setup();
+		darthM.update();
+		darthM.draw();
+	}
 
 }
 
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
-	storm.~StormTrooper();
+	
 }
 
 //--------------------------------------------------------------
