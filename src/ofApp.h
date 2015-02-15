@@ -3,6 +3,7 @@
 #include "ofMain.h"
 #include "DarthVader.h"
 #include "DarthMaul.h"
+#include "Emperor.h"
 
 class ofApp : public ofBaseApp{
 	public:
@@ -25,6 +26,8 @@ class ofApp : public ofBaseApp{
 	StormTrooper storm; // create 20 storm troopers;
 	DarthVader darthV;
 	DarthMaul darthM;
+	Emperor emperor;
+	
 
 	
 };

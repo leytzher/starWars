@@ -2,16 +2,19 @@
 #include "StormTrooper.h"
 #include "DarthVader.h"
 #include "DarthMaul.h"
+#include "Emperor.h"
 
 ofImage image;
 ofImage space;
-ofImage pigStorm;
+ofImage trainingLogo;
 
 //--------------------------------------------------------------
 void ofApp::setup(){
 	
+	
 	//Load image file
 	space.loadImage("space.png");
+	trainingLogo.loadImage("TrainingCenter.png");
 	
 	soundTrack.loadSound("Training-Mixed.wav");
 	soundTrack.setLoop(true);
@@ -30,6 +33,9 @@ void ofApp::setup(){
 	darthM = DarthMaul();
 	darthM.setup();
 	
+	emperor = Emperor();
+	emperor.setup();
+	
 }
 
 //--------------------------------------------------------------
@@ -39,6 +45,7 @@ void ofApp::update(){
 	storm.update();
 	darthV.update();
 	darthM.update();
+	emperor.update();
 
 }
 
@@ -47,8 +54,7 @@ void ofApp::draw(){
 	
 	ofBackground(0, 0, 0);
 	space.draw(0, 0, ofGetWidth(),ofGetHeight());
-
-	ofDrawBitmapString("Jedi Training Camp ", 100, 100);
+	trainingLogo.draw(0,0,trainingLogo.width*0.5,trainingLogo.height*0.5);
 	ofDrawBitmapString("Joaquin's 5th Birthday", 100, 200);
 
 
@@ -56,6 +62,7 @@ void ofApp::draw(){
 	storm.draw();
 	if (storm.pos.length() > ofGetHeight() + 100 || storm.pos.length() < ofGetHeight() -100){
 		storm.vel = -1*storm.vel;
+		storm.setup();
 		storm.update();
 		storm.draw();
 	}
@@ -72,6 +79,13 @@ void ofApp::draw(){
 		darthM.setup();
 		darthM.update();
 		darthM.draw();
+	}
+	
+	emperor.draw();
+	if (emperor.pos.length() > ofGetHeight()){
+		emperor.setup();
+		emperor.update();
+		emperor.draw();
 	}
 
 }
@@ -97,6 +111,7 @@ void ofApp::mouseDragged(int x, int y, int button){
 	sound.play();
 	sound.setVolume(0.2);
 	ofSoundUpdate();
+	
 }
 
 //--------------------------------------------------------------

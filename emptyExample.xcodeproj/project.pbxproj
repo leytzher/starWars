@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
+		CE11ED1E1A90861C00F69C0A /* Emperor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE11ED1C1A90861C00F69C0A /* Emperor.cpp */; };
 		CEF6E9AC1A90023A00A4702D /* StormTrooper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEF6E9AA1A90023A00A4702D /* StormTrooper.cpp */; };
 		CEF6E9AF1A902C8100A4702D /* DarthVader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEF6E9AD1A902C8100A4702D /* DarthVader.cpp */; };
 		CEF6E9B21A902E1C00A4702D /* DarthMaul.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEF6E9B01A902E1C00A4702D /* DarthMaul.cpp */; };
@@ -63,6 +64,8 @@
 
 /* Begin PBXFileReference section */
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
+		CE11ED1C1A90861C00F69C0A /* Emperor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Emperor.cpp; sourceTree = "<group>"; };
+		CE11ED1D1A90861C00F69C0A /* Emperor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Emperor.h; sourceTree = "<group>"; };
 		CEF6E9AA1A90023A00A4702D /* StormTrooper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StormTrooper.cpp; sourceTree = "<group>"; };
 		CEF6E9AB1A90023A00A4702D /* StormTrooper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StormTrooper.h; sourceTree = "<group>"; };
 		CEF6E9AD1A902C8100A4702D /* DarthVader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DarthVader.cpp; sourceTree = "<group>"; };
@@ -192,6 +195,8 @@
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
+				CE11ED1C1A90861C00F69C0A /* Emperor.cpp */,
+				CE11ED1D1A90861C00F69C0A /* Emperor.h */,
 				CEF6E9AA1A90023A00A4702D /* StormTrooper.cpp */,
 				CEF6E9AB1A90023A00A4702D /* StormTrooper.h */,
 				CEF6E9AD1A902C8100A4702D /* DarthVader.cpp */,
@@ -302,6 +307,7 @@
 				CEF6E9AF1A902C8100A4702D /* DarthVader.cpp in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				CEF6E9AC1A90023A00A4702D /* StormTrooper.cpp in Sources */,
+				CE11ED1E1A90861C00F69C0A /* Emperor.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
